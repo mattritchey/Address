@@ -78,7 +78,7 @@ def get_housing_data(address_input):
 
 
 @st.cache(allow_output_mutation=True)
-def address_quick(df, n_jobs=128):
+def address_quick(df, n_jobs=24):
     if isinstance(df, pd.DataFrame):
         df = df.drop_duplicates()
         df['address_input'] = df.iloc[:, 0]+', '+df.iloc[:, 1] + \
