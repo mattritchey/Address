@@ -1,0 +1,6 @@
+folium
+joblib
+numpy
+pandas
+streamlit
+streamlit_folium
